@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Hero Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<main class="main-display">
+		<header>
+			<a href="#" class="logo"><img src="./heroes/logo.png"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Netflix</a></li>
+				<li><a href="#">News latter</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+		<div class="content-box">
+			<div class="text-box">
+				<h1>That's What<br><span>I LIKE</span></h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.	
+				</p>
+				<a href="#">View all Super Heroes</a>
+			</div>
+			<div class="img-box">
+				<img src="./heroes/batman.png" class="batman">
+			</div>
+		</div>
+		<ul class="img-thumbnail">
+			<li>
+				<img src="./heroes/batman.png" onclick="imgTransform('./heroes/batman.png');changeBGcolor('#0099ff')">
+			</li>
+			<li>
+				<img src="./heroes/CA.png" onclick="imgTransform('./heroes/CA.png');changeBGcolor('#af0fff')">
+			</li>
+			<li>
+				<img src="./heroes/IR.png" onclick="imgTransform('./heroes/IR.png');changeBGcolor('#501dcf')">
+			</li>
+			<li>
+				<img src="./heroes/DP.png" onclick="imgTransform('./heroes/DP.png');changeBGcolor('blue')">
+			</li>
+		</ul>
+		<ul class="social-icons">
+			<li><i class="fa fa-facebook-f"></i></li>
+			<li><i class="fa fa-instagram"></i></li>
+			<li><i class="fa fa-twitter"></i></li>
+			<li><i class="fa fa-youtube-play"></i></li>
+			<li><i class="fa fa-pinterest-p"></i></li>
+			<li><i class="fa fa-github"></i></li>
+			<li><i class="fa fa-google-plus"></i></li>
+		</ul>
+	</main>
+	
+
+	<script type="text/javascript">
+		function imgTransform(anything) {
+			document.querySelector('.batman').src = anything;
+		}
+		function changeBGcolor (bgcolor) {
+			const bgclr = document.querySelector('.main-display');
+			bgclr.style.background = bgcolor;
+		}
+	</script>
+
+
+
+</body>
+</html>
